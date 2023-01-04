@@ -1,0 +1,183 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="bold">ARV Treatment Summary</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ARV-treatment ion-padding">
+    <!-- Clinical Laboratory -->
+    <h4 class="marginy-10">ARTC Summary &nbsp;<span class="notification">6</span></h4>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="12">
+          <div class="ART-box">
+            <span class="date-box">Regimen Start Date</span>
+            <div class="d-flex ion-justify-content-between">
+              <h5 class="bold">22/08/2022</h5>
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <br>
+      <ion-row>
+        <ion-col size-md="12">
+          <div class="ART-box">
+            <span class="date-box">ARV Regimen </span>
+            <div class="d-flex ion-justify-content-between">
+              <h5 class="bold">TLD + ABC + XYZ</h5>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+
+    <!-- MMD Patient -->
+    <h4 class="marginy-10">MMD Patient</h4>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom-checked"></ion-radio>
+            <ion-label class="ion-padding-start">Yes</ion-label>
+          </ion-radio-group>
+        </ion-col>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom"></ion-radio>
+            <ion-label class="ion-padding-start">No</ion-label>
+          </ion-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+
+    <!-- Select Duration -->
+    <h4 class="marginy-10">Select Duration</h4>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom-checked"></ion-radio>
+            <ion-label class="ion-padding-start">2 Months</ion-label>
+          </ion-radio-group>
+        </ion-col>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom"></ion-radio>
+            <ion-label class="ion-padding-start">3 Months</ion-label>
+          </ion-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+    <div expand="full" class="bottom-border"></div>
+    <br>
+
+    <!-- Patient follow-up -->
+    <h4 class="marginy-10">Patient follow-up visit(latest) &nbsp;<span class="notification">13</span></h4>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <div class="ART-box">
+            <span class="date-box">Visit #</span>
+            <div class="d-flex ion-justify-content-between">
+              <h5 class="bold">7</h5>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size-md="6">
+          <div class="ART-box">
+            <span class="date-box">Weight</span>
+            <div class="d-flex ion-justify-content-between">
+              <div class="d-flex ion-justify-content-between">
+                <h6 class="bold">60</h6>
+                <h6 class="bold">Kg</h6>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+
+    <!-- Functional Status -->
+    <h4 class="marginy-10">Functional Status</h4>
+      <ion-radio-group value="custom-checked">
+        <ion-item lines="none">
+          <ion-radio value="custom-checked"></ion-radio>
+          <ion-label class="ion-padding-start">Working</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-radio value="custom"></ion-radio>
+          <ion-label class="ion-padding-start">Ambulatory</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-radio value="custom"></ion-radio>
+          <ion-label class="ion-padding-start">Bedridden</ion-label>
+        </ion-item>
+      </ion-radio-group>
+      <br>
+
+      <!-- Functional Status -->
+      <h4 class="marginy-10">WHO Clinical Stage</h4>
+      <ion-range [ticks]="true" [snaps]="true" [value]="1" [pin]="true" [min]="0" [max]="3"></ion-range>
+      <div class="d-flex ion-justify-content-between">
+        <span>Stage 1</span>
+        <span>Stage 2</span>
+        <span>Stage 3</span>
+        <span>Stage 4</span>
+      </div>
+      <br>
+
+      <!-- Opportunistic Infection -->
+      <div class="opportunistic-infection">
+        <h4 class="marginy-10">Opportunistic Infection Code</h4>
+          <div class="box-item">
+            <div class="paddingl-10">
+              <p>24 Nov 22</p>
+              <h6 class="bold">Herpes Zoster (Z)</h6>
+            </div>
+          </div>
+      </div>
+      <br>
+      <h4 class="marginy-10">Drugs prescribed for Opportunistic Infections</h4>
+      <br>
+
+      <!-- Select Duration -->
+      <h4 class="marginy-10">TB Treatment</h4>
+      <ion-grid>
+        <ion-row>
+          <ion-col size-md="6">
+            <ion-radio-group value="custom-checked">
+              <ion-radio value="custom-checked"></ion-radio>
+              <ion-label class="ion-padding-start">Yes</ion-label>
+            </ion-radio-group>
+          </ion-col>
+          <ion-col size-md="6">
+            <ion-radio-group value="custom-checked">
+              <ion-radio value="custom"></ion-radio>
+              <ion-label class="ion-padding-start">No</ion-label>
+            </ion-radio-group>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <br><br>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size-md="12">
+            <ion-button expand="block" class="ion-no-padding btn-radius" color="secondary" fill="outline" >
+              Edit Data
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+</ion-content>

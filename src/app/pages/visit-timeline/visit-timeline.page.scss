@@ -1,0 +1,30 @@
+.box-item{
+ padding: 10px;
+ border-bottom: 1px solid #f6f6f6;
+
+ &:nth-child(1){
+  border: 1px solid gray;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  }
+  h6{
+    margin: 10px 0;
+    font-weight: bold;
+    color: #5598ff;
+  }
+  span{
+    font-style: italic;
+  }
+}
+
+.add-drug{
+  padding: 6px;
+  color: #000000;
+  width: fit-content;
+  border-radius: 20px;
+  background-color: #ffd948;
+}
+
+.mis-custom{
+  color: #000000;
+}

@@ -1,0 +1,149 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="bold">Medical-history</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="investigation ion-padding">
+    <!-- Clinical Laboratory -->
+    <h4 class="marginy-10">Clinical Laboratory Investigations <span class="notification">5</span></h4>
+    <p class="bold arginy-10">As start of ART</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <div class="ART-box">
+            <span class="date-box">Date</span>
+            <div class="d-flex ion-justify-content-between">
+              <h5 class="bold">16/04/2022</h5>
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size-md="6">
+          <div class="ART-box">
+            <span class="date-box">CD4 Count</span>
+            <div class="d-flex ion-justify-content-between">
+              <h5 class="bold d-inline">200</h5>
+              <span class="">Cells/mm3</span>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <p class="bold marginy-10">Latest CD4 Count</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <div class="ART-box">
+            <div class="d-flex ion-justify-content-between">
+              <span class="date-box">Date</span>
+              <h5 class="bold">16/04/2022</h5>
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size-md="6">
+          <div class="ART-box">
+            <span class="date-box">CD4 Count</span>
+            <div class="d-flex ion-justify-content-between">
+              <h5 class="bold d-inline">200</h5>
+              <span class="">Cells/mm3</span>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br>
+    <div expand="full" class="bottom-border"></div>
+    <br><br>
+
+    <!-- Medical History -->
+    <h4 class="marginy-10">Medical History <span class="notification">5</span></h4>
+    <p class="bold">Habit of Alcohol use</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom-checked"></ion-radio>
+            <ion-label class="ion-padding-start">Habitual</ion-label>
+          </ion-radio-group>
+        </ion-col>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom"></ion-radio>
+            <ion-label class="ion-padding-start">Social</ion-label>
+          </ion-radio-group>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom"></ion-radio>
+            <ion-label class="ion-padding-start">Never</ion-label>
+          </ion-radio-group>
+        </ion-col>
+        <ion-col size-md="6">
+          <ion-radio-group value="custom-checked">
+            <ion-radio value="custom"></ion-radio>
+            <ion-label class="ion-padding-start">Past History</ion-label>
+          </ion-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <br>
+
+  <!-- Other Condition -->
+  <div class="other-condition ion-padding">
+    <h4 class="marginy-10">Other Co-existing Condition</h4>
+      <div class="box-item">
+        <div class="paddingl-10">
+          <p>24 Nov 22</p>
+          <h6 class="bold">Diabetes</h6>
+        </div>
+      </div>
+  </div>
+
+  <!-- Other than ART -->
+  <div class="other-condition ion-padding">
+    <h4 class="marginy-10">Current Medications (Other than ART)</h4><br>
+    <div class="ART-box">
+      <span class="date-box">Drug allergy</span>
+      <ion-textarea class="custom-textarea" placeholder="Enter here"></ion-textarea>
+    </div>
+  </div>
+
+  <!-- Test Investigation -->
+  <div class="test-investigation ion-padding">
+  <h4 class="marginy-10">Test Investigation <span class="notification">12</span></h4>
+  <div class="custom-list">
+      <div class="list-item">
+        <p>24 Nov 22</p>
+        <div class="d-flex ion-justify-content-between">
+          <h6 class="bold">Diabetes</h6>
+          <h6 class="bold">240mg/dL</h6>
+        </div>
+      </div>
+      <div class="list-item">
+        <p>24 Nov 22</p>
+        <div class="d-flex ion-justify-content-between">
+          <h6 class="bold">Creatinine</h6>
+          <h6 class="bold">2.5mg/dL</h6>
+        </div>
+      </div>
+      <div class="list-item">
+        <p>24 Nov 22</p>
+        <div class="d-flex ion-justify-content-between">
+          <h6 class="bold">Viral Load</h6>
+          <h6 class="bold">1200 copies/mL</h6>
+        </div>
+      </div>
+
+  </div>
+  </div>
+</ion-content>

@@ -1,17 +1,89 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title class="bold">
+      Patient Enrolled
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Patient Enrolled</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+      <ion-searchbar [(ngModel)]="searchTerm" class="custom" show-clear-button="always"></ion-searchbar>
+    </ion-col>
+    <ion-col>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-list *ngFor="let patient of patients | filter:searchTerm">
+  <!-- <ion-item
+    *ngFor="let patient of patients | filter:searchTerm"
+    [routerLink]="['/patients',patients.id]"
+  > -->
+      <ion-item detail class="full-width"
+      [routerLink]="['/summary']"
+      >
+      <ion-grid>
+        <ion-row>
+          <ion-col size-md="6">
+            <ion-label class="patient-title">{{ patient.name }}</ion-label>
+            <ion-label><p>{{ patient.healthcare }}</p></ion-label>
+          </ion-col>
+          <ion-col size-md="6" class="ion-text-end">
+            <ion-label><span class="mis-custom ion-margin-end">{{ patient.mis }}</span>{{ patient.patient_id }}</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-item>
+</ion-list>
+<!-- <ion-list>
+  <ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-label class="patient-title">Harshvardhan Shah</ion-label>
+          <ion-label><p>Alca Healthcare</p></ion-label>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end">
+          <ion-label><span class="mis-custom ion-margin-end">MIS 2</span>#76123456</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+  <ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-label class="patient-title">Harshvardhan Shah</ion-label>
+          <ion-label><p>Alca Healthcare</p></ion-label>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end">
+          <ion-label><span class="mis-custom ion-margin-end">MIS 2</span>#76123456</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+  <ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-label class="patient-title">Harshvardhan Shah</ion-label>
+          <ion-label><p>Alca Healthcare</p></ion-label>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end">
+          <ion-label><span class="mis-custom ion-margin-end">MIS 2</span>#76123456</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-list> -->
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
 </ion-content>

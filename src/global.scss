@@ -24,3 +24,74 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+//Custom-scss
+h1,h2,h3,h4,h5,h6{
+  margin: 10px 0;
+}
+p{
+  color: #959595;
+  font-size: 14px;
+  margin: 5px 0 !important;
+}
+.patient-title{
+  font-weight:bolder
+}
+
+.patient-info{
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.mis-custom{
+  background-color: #e0bb2e;
+  border-radius: 30px;
+  text-align: center;
+  padding: 4px 8px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.d-flex{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  .flex-item{
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+}
+
+.btn-radius{
+  --border-radius: 20px;
+}
+
+.center{
+text-align: center;
+}
+.marginy-10{
+  margin: 10px 0;
+}
+.marginl-10{
+  margin-left: 10px;
+}
+.paddingl-10{
+  padding-left: 10px;
+}
+.bold{
+  font-weight: bold;
+}
+
+.bottom-border{
+  height: 15px;
+  background-color: #f6f6f6;
+}

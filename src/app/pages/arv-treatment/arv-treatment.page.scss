@@ -1,0 +1,44 @@
+.notification{
+  background-color: #ffca22;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2px 8px;
+  width: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.ART-box{
+ border: 1px solid gray;
+ background-color: #f6f6f6;
+ border-radius: 8px;
+ position: relative;
+ padding: 10px;
+
+ .date-box{
+  position: absolute;
+  top: -18%;
+  background-color: #ffffff;
+  padding: 2px 4px;
+ }
+ .d-inline{
+  display: inline-block;
+ }
+}
+
+.box-item{
+  padding: 10px;
+  border-bottom: 1px solid #959595;
+}
+.box-item{
+  border: 1px solid #959595;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+
+ion-range {
+  --bar-height: 6px;
+  --bar-border-radius: 8px;
+  --knob-size: 26px;
+  padding: 0;
+}

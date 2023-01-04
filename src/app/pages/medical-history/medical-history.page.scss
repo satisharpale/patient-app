@@ -1,0 +1,67 @@
+.notification{
+  background-color: #ffca22;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2px 8px;
+  width: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.ART-box{
+ border: 1px solid #959595;
+ background-color: #f6f6f6;
+ border-radius: 8px;
+ position: relative;
+ padding: 16px 10px;
+
+ .date-box{
+  position: absolute;
+  top: -14%;
+  background-color: #ffffff;
+  padding: 2px 4px;
+ }
+ .d-inline{
+  display: inline-block;
+ }
+}
+
+ion-radio {
+  --border-radius: 50px;
+  --inner-border-radius: 50px;
+  --color: #ddd;
+  --color-checked: #6815ec;
+}
+
+ion-radio.ios {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+}
+
+.radio-checked.ios {
+  border-color: #6815ec;
+}
+
+.box-item{
+  padding: 10px;
+  border-bottom: 1px solid #959595;
+}
+.box-item{
+  border: 1px solid #959595;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+
+  .custom-list{
+    padding: 20px;
+    border: 1px solid #959595;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+
+    .list-item{
+      border-bottom: 1px solid #959595;
+      padding: 10px;
+    }
+  }
