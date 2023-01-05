@@ -31,13 +31,13 @@
       [routerLink]="['/summary']"
       >
       <ion-grid>
-        <ion-row>
+        <ion-row class="ion-text-wrap">
           <ion-col size-md="6">
-            <ion-label class="patient-title">{{ patient.name }}</ion-label>
+            <ion-label class="patient-title label">{{ patient.name }}</ion-label>
             <ion-label><p>{{ patient.healthcare }}</p></ion-label>
           </ion-col>
           <ion-col size-md="6" class="ion-text-end">
-            <ion-label><span class="mis-custom ion-margin-end">{{ patient.mis }}</span>{{ patient.patient_id }}</ion-label>
+            <ion-label class="label"><span class="mis-custom ion-margin-end">{{ patient.mis }}</span>{{ patient.patient_id }}</ion-label>
           </ion-col>
         </ion-row>
       </ion-grid>
